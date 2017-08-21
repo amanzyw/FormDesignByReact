@@ -589,12 +589,13 @@ class FormSettingUnit extends React.Component{
                     </div>
                     <div className="form-control">
                         <div className="from-text">
-                            <span className="thumb-size">验证</span>
+                            <span className="thumb-size">大写</span>
                         </div>
                         <div className="input-div">
                             <label className="form-label">
                                 <input type="checkbox" className="form-ckbox" value={item.upperCase} checked={item.upperCase} onChange={that.hasUpperCaseChange.bind(that)}/>
-                                <span className="statement">必填</span>
+                                <span className="statement">显示大写</span>
+                                <span className="upper-case">输入数字后自动显示大写</span>
                             </label>
                         </div>
                     </div>

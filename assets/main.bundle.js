@@ -24867,7 +24867,7 @@ var FormSettingUnit = function (_React$Component2) {
                             _react2.default.createElement(
                                 "span",
                                 { className: "thumb-size" },
-                                "\u9A8C\u8BC1"
+                                "\u5927\u5199"
                             )
                         ),
                         _react2.default.createElement(
@@ -24880,7 +24880,12 @@ var FormSettingUnit = function (_React$Component2) {
                                 _react2.default.createElement(
                                     "span",
                                     { className: "statement" },
-                                    "\u5FC5\u586B"
+                                    "\u663E\u793A\u5927\u5199"
+                                ),
+                                _react2.default.createElement(
+                                    "span",
+                                    { className: "upper-case" },
+                                    "\u8F93\u5165\u6570\u5B57\u540E\u81EA\u52A8\u663E\u793A\u5927\u5199"
                                 )
                             )
                         )

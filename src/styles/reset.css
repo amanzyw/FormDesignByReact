@@ -1,0 +1,268 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}
+html, body{
+    height:100%;
+}
+ul{
+    list-style:none;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    /*line-height: 2em;*/
+    color: inherit;
+    text-rendering: optimizelegibility;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 12px;
+}
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, 'Hiragino Sans GB', 微软雅黑, 'WenQuanYi Micro Hei', STHeiti, SimSun, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    font-size: 15px;
+    color:#333333;
+
+    background-color:white;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+
+}
+input, select, textarea{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+*{
+  -webkit-overflow-scrolling : touch;
+  overflow-scrolling : touch;
+}
+::-webkit-scrollbar-track-piece {
+    background-color:#f5f5f5;
+    border-left:1px solid #d2d2d2;
+}
+::-webkit-scrollbar {
+    width:13px;
+    height:13px;
+}
+::-webkit-scrollbar-thumb {
+    background-color:#c2c2c2;
+    background-clip:padding-box;
+    border:1px solid #979797;
+    min-height:28px;
+}
+::-webkit-scrollbar-thumb:hover {
+    border:1px solid #636363;
+    background-color:#929292;
+}
+a{
+    color: #1982D1;
+    text-decoration: none;
+
+}
+a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:active {
+
+
+
+    text-decoration:none;
+
+    -webkit-transition: text-shadow 500ms ease-in 0ms, color 500ms ease-in 0ms;
+    -moz-transition: text-shadow 500ms ease-in 0ms, color 500ms ease-in 0ms;
+    -ms-transition: text-shadow 500ms ease-in 0ms, color 500ms ease-in 0ms;
+    -o-transition: text-shadow 500ms ease-in 0ms, color 500ms ease-in 0ms;
+    transition: text-shadow 500ms ease-in 0ms, color 500ms ease-in 0ms;
+
+}
+
+a:hover,
+a:focus{
+    color: orange;
+    text-decoration: none;
+
+
+    -webkit-transition: text-shadow 250ms ease-in 0ms, color 250ms ease-in 0ms;
+    -moz-transition: text-shadow 250ms ease-in 0ms, color 250ms ease-in 0ms;
+    -ms-transition: text-shadow 250ms ease-in 0ms, color 250ms ease-in 0ms;
+    -o-transition: text-shadow 250ms ease-in 0ms, color 250ms ease-in 0ms;
+    transition: text-shadow 250ms ease-in 0ms, color 250ms ease-in 0ms;
+}
+
+.avatar {
+    padding:1px;
+    float: left;
+    width:50px;
+    height:50px;
+    overflow: hidden;
+    /*border:1px solid #333;*/
+}
+
+.animated {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.animated.hinge {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes tada {
+    0% {-webkit-transform: scale(1);}
+    10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);}
+    30%, 50%, 70%, 90% {-webkit-transform: scale(1.1) rotate(3deg);}
+    40%, 60%, 80% {-webkit-transform: scale(1.1) rotate(-3deg);}
+    100% {-webkit-transform: scale(1) rotate(0);}
+}
+
+@-moz-keyframes tada {
+    0% {-moz-transform: scale(1);}
+    10%, 20% {-moz-transform: scale(0.9) rotate(-3deg);}
+    30%, 50%, 70%, 90% {-moz-transform: scale(1.1) rotate(3deg);}
+    40%, 60%, 80% {-moz-transform: scale(1.1) rotate(-3deg);}
+    100% {-moz-transform: scale(1) rotate(0);}
+}
+
+@-ms-keyframes tada {
+    0% {-ms-transform: scale(1);}
+    10%, 20% {-ms-transform: scale(0.9) rotate(-3deg);}
+    30%, 50%, 70%, 90% {-ms-transform: scale(1.1) rotate(3deg);}
+    40%, 60%, 80% {-ms-transform: scale(1.1) rotate(-3deg);}
+    100% {-ms-transform: scale(1) rotate(0);}
+}
+
+@-o-keyframes tada {
+    0% {-o-transform: scale(1);}
+    10%, 20% {-o-transform: scale(0.9) rotate(-3deg);}
+    30%, 50%, 70%, 90% {-o-transform: scale(1.1) rotate(3deg);}
+    40%, 60%, 80% {-o-transform: scale(1.1) rotate(-3deg);}
+    100% {-o-transform: scale(1) rotate(0);}
+}
+
+@keyframes tada {
+    0% {transform: scale(1);}
+    10%, 20% {transform: scale(0.9) rotate(-3deg);}
+    30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);}
+    40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);}
+    100% {transform: scale(1) rotate(0);}
+}
+
+.tada:hover {
+    -webkit-animation-name: tada;
+    -moz-animation-name: tada;
+    -ms-animation-name: tada;
+    -o-animation-name: tada;
+    animation-name: tada;
+}
+/*原生头像兼容动画*/
+.avatar {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.avatar.hinge {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+
+select{
+        -webkit-appearance: none;
+    padding: 2px 22px 2px 10px;
+    border-radius: 0;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAADCAMAAACtb39mAAAABlBMV…I/Psn0/S4AAAAXSURBVBhXY2AAA0Y4YGBE5QMFGFH4jAADSQAl/E4eeQAAAABJRU5ErkJggg==) right center no-repeat #fff;
+
+
+    font-size: 12px;
+    height: 21px;
+    border: 1px solid;
+    border-color: #999 #ddd #ddd #999;
+    color: #666;
+}
+
+
+.i-project .i-art-wrap:hover .light {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    left: 100%;
+}
+index-ddb0d6.css:1
+.i-project .i-art-wrap .light {
+    cursor: pointer;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(0deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.5),hsla(0,0%,100%,0));
+    transform: skewx(-25deg);
+    -o-transform: skewx(-25deg);
+    -moz-transform: skewx(-25deg);
+    -webkit-transform: skewx(-25deg);
+}

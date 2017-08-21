@@ -24769,6 +24769,7 @@ var FormSettingUnit = function (_React$Component2) {
                 );
             }
             if (item["type"] == "inputMoney") {
+
                 panel = _react2.default.createElement(
                     "div",
                     null,

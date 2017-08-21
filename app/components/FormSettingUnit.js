@@ -555,6 +555,7 @@ class FormSettingUnit extends React.Component{
             )
         }
         if(item["type"]=="inputMoney"){
+
             panel=(
                 <div>
                     <div className="form-control">

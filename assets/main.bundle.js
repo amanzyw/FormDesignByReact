@@ -23749,8 +23749,8 @@ var Myoptions = function (_React$Component) {
             var item = this.state.item;
             var index = this.state.index;
             var len = item["sOpts"].length;
-            if (len == 200) {
-                alert("不能超过200个选项");
+            if (len == 10) {
+                alert("不能超过10个选项");
                 return;
             }
             item["sOpts"].push({
@@ -23762,6 +23762,9 @@ var Myoptions = function (_React$Component) {
         key: "render",
         value: function render() {
             var value = this.state.value;
+            var item = this.state.item;
+            var optionLen = item["sOpts"].length;
+
             return _react2.default.createElement(
                 "div",
                 { className: "form-add-item" },
@@ -23770,8 +23773,8 @@ var Myoptions = function (_React$Component) {
                     { className: "iblock add-input" },
                     _react2.default.createElement("input", { onChange: this.handleChange.bind(this), type: "text", className: "form-input", value: value })
                 ),
-                _react2.default.createElement("div", { className: "btn-minus btn-i-cell", onClick: this.btnOptionminus.bind(this) }),
-                _react2.default.createElement("div", { className: "btn-add btn-i-cell", onClick: this.btnOptionAdd.bind(this) })
+                _react2.default.createElement("div", { className: optionLen == 1 ? "btn-minus btn-i-cell disabled" : "btn-minus btn-i-cell", onClick: this.btnOptionminus.bind(this) }),
+                _react2.default.createElement("div", { className: optionLen >= 10 ? "btn-add btn-i-cell disabled" : "btn-add btn-i-cell", onClick: this.btnOptionAdd.bind(this) })
             );
         }
     }]);
@@ -24364,7 +24367,7 @@ var FormSettingUnit = function (_React$Component2) {
                             _react2.default.createElement(
                                 "i",
                                 { className: "tips" },
-                                "\u6700\u591A200\u9879\uFF0C\u6BCF\u9879\u6700\u591A20\u5B57"
+                                "\u6700\u591A10\u9879\uFF0C\u6BCF\u9879\u6700\u591A20\u5B57"
                             )
                         ),
                         _react2.default.createElement(
@@ -24452,7 +24455,7 @@ var FormSettingUnit = function (_React$Component2) {
                             _react2.default.createElement(
                                 "i",
                                 { className: "tips" },
-                                "\u6700\u591A200\u9879\uFF0C\u6BCF\u9879\u6700\u591A20\u5B57"
+                                "\u6700\u591A10\u9879\uFF0C\u6BCF\u9879\u6700\u591A20\u5B57"
                             )
                         ),
                         _react2.default.createElement(

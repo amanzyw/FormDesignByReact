@@ -44,8 +44,8 @@ class Myoptions extends React.Component{
         let item=this.state.item;
         let index=this.state.index;
         let len=item["sOpts"].length;
-        if(len==200){
-            alert("不能超过200个选项");
+        if(len==10){
+            alert("不能超过10个选项");
             return;
         }
         item["sOpts"].push({
@@ -55,13 +55,16 @@ class Myoptions extends React.Component{
     }
     render(){
         let value=this.state.value;
+        let item=this.state.item;
+        let optionLen=item["sOpts"].length;
+
         return (
             <div className="form-add-item">
                 <div className="iblock add-input">
                     <input onChange={this.handleChange.bind(this)} type="text" className="form-input" value={value}/>
                 </div>
-                <div className="btn-minus btn-i-cell" onClick={this.btnOptionminus.bind(this)}></div>
-                <div className="btn-add btn-i-cell" onClick={this.btnOptionAdd.bind(this)}></div>
+                <div className={optionLen==1?"btn-minus btn-i-cell disabled":"btn-minus btn-i-cell"} onClick={this.btnOptionminus.bind(this)}></div>
+                <div className={optionLen>=10?"btn-add btn-i-cell disabled":"btn-add btn-i-cell"} onClick={this.btnOptionAdd.bind(this)}></div>
             </div>
         );
     }
@@ -384,7 +387,7 @@ class FormSettingUnit extends React.Component{
                     <div className="form-control">
                         <div className="from-text">
                             <span className="thumb-size">选项</span>
-                            <i className="tips">最多200项，每项最多20字</i>
+                            <i className="tips">最多10项，每项最多20字</i>
                         </div>
                         <div className="form-control-add">
                             {optionsPanel}
@@ -424,7 +427,7 @@ class FormSettingUnit extends React.Component{
                     <div className="form-control">
                         <div className="from-text">
                             <span className="thumb-size">选项</span>
-                            <i className="tips">最多200项，每项最多20字</i>
+                            <i className="tips">最多10项，每项最多20字</i>
                         </div>
                         <div className="form-control-add">
                             {optionsPanel}

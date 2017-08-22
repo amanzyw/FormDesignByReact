@@ -2,7 +2,7 @@
 * @Author: Wanglj
 * @Date:   2017-08-08 11:40:28
 * @Last Modified by:   Wanglj
-* @Last Modified time: 2017-08-14 09:41:12
+* @Last Modified time: 2017-08-22 14:48:21
 */
 input::-webkit-input-placholder{
     color:#999;
@@ -310,6 +310,10 @@ input:-ms-input-placeholder{
 .btn-i-cell{
     margin:0 0 0 3px;
     vertical-align:middle;
+}
+.btn-i-cell.disabled{
+    opacity:0.2;
+    pointer-events:none;
 }
 .form-input{
     height:30px;

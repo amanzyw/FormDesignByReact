@@ -1,4 +1,5 @@
 import React from 'react';
+import QueueAnim from 'rc-queue-anim';
 class Myoptions extends React.Component{
     constructor(props){
         super(props);
@@ -390,7 +391,9 @@ class FormSettingUnit extends React.Component{
                             <i className="tips">最多10项，每项最多20字</i>
                         </div>
                         <div className="form-control-add">
-                            {optionsPanel}
+                            <QueueAnim>
+                                {optionsPanel}
+                            </QueueAnim>
                         </div>
                     </div>
                     <div className="form-control">
@@ -430,7 +433,9 @@ class FormSettingUnit extends React.Component{
                             <i className="tips">最多10项，每项最多20字</i>
                         </div>
                         <div className="form-control-add">
-                            {optionsPanel}
+                            <QueueAnim>
+                                {optionsPanel}
+                            </QueueAnim>
                         </div>
                     </div>
                     <div className="form-control">
